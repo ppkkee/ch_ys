@@ -1,0 +1,300 @@
+@import url("//fonts.googleapis.com/earlyaccess/jejumyeongjo.css");
+
+body {
+    font-family: 'Jeju Myeongjo', serif;
+    font-size: 25px;
+    color: #899f64;
+}
+
+.wrap {
+    text-align: center;
+    width: 767px;
+    background-image: url(../images/bg.png);
+    background-size: contain;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main {
+    background-image: url(../images/main.png);
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1000px;
+    text-align: center;
+
+}
+
+.mainT {
+    padding-top: 9vh;
+    font-size: 45px;
+    color: white;
+    font-weight: 300;
+}
+
+.subT {
+    padding-top: 2vh;
+    font-size: 32px;
+
+}
+
+.name {
+    padding-top: 1vh;
+}
+
+.color {
+    color: #d5cd76;
+    font-size: 40px;
+}
+
+.text {
+    color: :#899f64;
+    line-height: 1.5;
+
+}
+
+.day {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.place {
+    padding-top: 8px;
+    font-size: 25px;
+}
+
+.invite {
+    border-top: 1px solid #d6d4c5;
+    border-bottom: 1px solid #d6d4c5;
+    width: 70%;
+    margin: 70px auto;
+    padding: 40px 0;
+
+}
+
+.inviteT {
+    padding: 40px 0;
+}
+
+.subName {
+    letter-spacing: 5px;
+}
+
+.subPic {
+    background-image: url(../images/sub.png);
+    background-size: contain;
+    height: 400px;
+    margin-top: 40px;
+}
+
+.gallery {
+    margin-top: 10vh;
+
+}
+
+.gallery > h2 {
+    padding: 40px 0;
+    font-size: 30px;
+}
+
+.banner {
+    margin-left: 150px;
+}
+
+.banner img,
+.banner2 img {
+    width: 100%;
+}
+
+#gSmall {
+    position: relative;
+    width: 767px;
+    height: 300px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.banner {
+    width: 500%;
+    height: 190px;
+    margin: 0;
+}
+
+.banner > li {
+    width: 5%;
+    float: left;
+    /*    margin: 0 5px;*/
+}
+
+.banner > li img {
+    width: 100%;
+}
+
+
+.btn {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    z-index: 999;
+
+}
+
+.btn > li {}
+
+.btn > .leftBtn {
+    float: left;
+}
+
+.btn > .rightBtn {
+    float: right;
+}
+
+.circleBtn {
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.circleBtn > li {
+    display: inline-block;
+    margin: 5px;
+    text-indent: -99999px;
+}
+
+.circleBtn > li > a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #899f64;
+    border-radius: 50%;
+}
+
+.gBig {
+    z-index: 9999;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.close {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.banner2 {
+
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 60%;
+    z-index: 9999;
+}
+
+.banner2 > li {
+    display: none;
+}
+
+#calendar {
+    margin: 100px auto;
+}
+
+#tbCalendarYM {
+    font-size: 35px !important;
+}
+
+.week {
+    height: 80px;
+}
+
+#calendar td {
+    width: 80px;
+    height: 50px;
+    font-size: 26px;
+}
+
+.calT {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #899f64;
+    color: white;
+}
+
+.calT > strong {
+    letter-spacing: 5px;
+    line-height: 1.2;
+
+}
+
+.calT > p:nth-of-type(2) {
+    margin-top: 20px;
+}
+
+#map {
+    margin: 40px auto;
+    width: 80%;
+    height: 400px;
+    font-size: 20px;
+
+
+}
+
+.mapT {
+    width: 80%;
+    margin: 40px auto;
+    text-align: left;
+}
+
+.mapT > strong {
+    line-height: 1.7;
+}
+
+.mapT > p {
+    font-size: 20px;
+    line-height: 1.2;
+
+}
+
+.by {
+    padding: 50px 0;
+    font-size: 15px;
+}
+
+@media screen and (max-width:767px) {
+    .mainT {
+        padding-top: 15vh;
+
+    }
+}
+
+@media screen and (max-width:414px) {
+    .mainT {
+        padding-top: 19vh;
+        font-size: 40px;
+
+    }
+
+    .subT {
+
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .mainT {
+        padding-top: 22vh;
+        font-size: 40px;
+
+    }
+
+    .subT {
+        font-size: 28px;
+    }
+}

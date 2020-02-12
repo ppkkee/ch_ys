@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>창희&amp;유선의 wedding day</title>
+
+    <link rel="stylesheet" href="css/common1.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+   
+   <script src="js/main.js"></script>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="main">
+            <div class="mainT">
+                <p>/결/혼/합/니/다/</p>
+                <p class="subT">Wedding invitation</p>
+                <p class="name">
+                    <span>김창희</span>
+                    <span class="color">그리고</span>
+                    <span>정유선</span>
+                </p>
+            </div>
+        </div>
+        <div class="text">
+            <p class="day">2020년 3월 21일 (토) 오후4시</p>
+            <p class="place">파티움하우스 더 그레이스 켈리</p>
+            <div class="invite">
+                <h2>모시는글</h2>
+                <p class="inviteT">
+                    서로 다른 길을 걸어온 저희가<br>하나님의 사랑안에서 하나로 시작합니다.<br>믿음과 사랑으로 맺어지는 자리에 오셔서<br>축복해 주시면 감사하겠습니다.
+                </p>
+                <p class="subName"><strong>김진석ㆍ김길순</strong>의 장남<strong> 창희</strong></p>
+                <p class="subName"><strong>정승균ㆍ이재숙</strong>의 장녀<strong> 유선</strong></p>
+            </div>
+            <p class="subPic"></p>
+        </div>
+        <div class="gallery">
+            <h2>gallery</h2>
+            <div id="gSmall">
+            <ul class="banner">
+                <li class="b1"><a href="#"><img src="images/g1s.jpg" alt=""></a></li>
+                <li class="b2"><a href="#"><img src="images/g2s.jpg" alt=""></a></li>
+                <li class="b3"><a href="#"><img src="images/g3s.jpg" alt=""></a></li>
+                <li class="b4"><a href="#"><img src="images/g4s.jpg" alt=""></a></li>
+            </ul>
+            <ul class="btn">
+            <li class="leftBtn"><a href="#"><img src="images/lBtn.png" alt=""></a></li>    
+            
+            <li class="rightBtn"><a href="#"><img src="images/rBtn.png" alt=""></a></li>
+        </ul>
+           <ul class="circleBtn">
+               <li><a href="#">1</a></li>
+               <li><a href="#">2</a></li>
+               <li><a href="#">3</a></li>
+               <li><a href="#">4</a></li>
+           </ul>
+            </div>
+            <div class="gBig">
+                  <p class="close"><a href="#"><img src="images/close.png" alt=""></a></p>
+               
+                <ul class="banner2">
+                    <li class="b11">
+                        <img src="images/g1.jpg" alt="">
+                
+                    </li>
+                    <li class="b12">
+                        <img src="images/g2.jpg" alt="">
+                 
+                    </li>
+                    <li class="b13">
+                        <img src="images/g3.jpg" alt="">
+                    
+                    </li>
+                    <li class="b14">
+                        <img src="images/g4.jpg" alt="">
+                   
+                    </li>
+                </ul>
+                  
+            </div>
+        </div>
+        <div class="cal">
+
+
+            <table id="calendar" align="center">
+                <tr>
+                    <!-- label은 마우스로 클릭을 편하게 해줌 -->
+                    <td></td>
+                    <td align="center" id="tbCalendarYM" colspan="5">
+                        03</td>
+
+                </tr>
+                <tr class="week">
+                    <td align="center">sun</td>
+                    <td align="center">mon</td>
+                    <td align="center">tue</td>
+                    <td align="center">wed</td>
+                    <td align="center">thu</td>
+                    <td align="center">fri</td>
+                    <td align="center">sat</td>
+                </tr>
+            </table>
+            <div class="calT">
+                <strong>2020년 3월21일 (토) 오후4시</strong>
+                <p>파티움하우스 더 그레이스켈리</p>
+                <p>경기 수원시 팔달구 효원로 296</p>
+            </div>
+        </div>
+        <div class="map">
+            <p id="map">
+                <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0250ea2d6930bbc149656c54b0acf2d0"></script>
+                <script>
+                    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                        mapOption = {
+                            center: new kakao.maps.LatLng(37.2605, 127.0338), // 지도의 중심좌표
+                            level: 2 // 지도의 확대 레벨
+                        };
+
+                    var map = new kakao.maps.Map(mapContainer, mapOption);
+
+                    // 마커가 표시될 위치입니다 
+                    var markerPosition = new kakao.maps.LatLng(37.2605, 127.0338);
+
+                    // 마커를 생성합니다
+                    var marker = new kakao.maps.Marker({
+                        position: markerPosition
+                    });
+
+                    // 마커가 지도 위에 표시되도록 설정합니다
+                    marker.setMap(map);
+
+                    var iwContent = '<div style="padding:10px;">파티움하우스<br><a href="https://map.kakao.com/link/map/파티움하우스,37.2605,127.0338" style="color:#666" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/파티움하우스,37.2605,127.0338" style="color:#666" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+                        iwPosition = new kakao.maps.LatLng(37.2605, 127.0338); //인포윈도우 표시 위치입니다
+
+                    // 인포윈도우를 생성합니다
+                    var infowindow = new kakao.maps.InfoWindow({
+                        position: iwPosition,
+                        content: iwContent
+                    });
+
+                    // 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
+                    infowindow.open(map, marker);
+                </script>
+            </p>
+            <div class="mapT">
+                <strong>지하철역</strong>
+                <p>수원시청역/1번출구</p>
+                <strong>버스정류장</strong>
+                <p>수원시청역 1번출구, 국민연금공단, 경인일보 /51, 61, 80, 81, 82-1<br>
+                    수원시청역 2번출구, 벽산그랜드코리아 / 13-1, 202, 80, 99-2, 3002, 4000, 7002</p>
+
+            </div>
+        </div>
+        <p class="bg"></p>
+        <p class="by">ⓒ. odd_eun all right reserved.</p>
+    </div>
+</body></html>

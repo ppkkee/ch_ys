@@ -1,0 +1,93 @@
+/* 공통사항 */
+
+/*
+@font-face{
+    font-family:"sw_fn";
+    src:url(../font/Subway-Footlong.woff);
+}
+h2,h3{
+    font-family:"sw_fn";
+}
+*/
+/* 전체 여백 제거 */
+*{
+    margin:0;
+    padding:0;
+}
+/* li 장식 제거 */
+li{
+    list-style:none;
+}
+/* a 밑줄제거, 색상변경 */
+a{
+    text-decoration: none;
+    color:#483834;
+}
+/* img 테두리 제거, top정렬 */
+img{
+    border:0;
+    vertical-align:top;
+}
+/* 글씨체, 글씨크기, 글씨색상 */
+
+/* .blind */
+.blind{
+    position:absolute;
+    top:-999999px;
+}
+/* after한번에 주기 */
+.clearFix:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+/* address */
+h2,i,em,address{
+    font-style:normal;
+}
+/* label,button 커서모양 바꾸기 */
+label,button{
+    cursor:pointer;
+}
+/* hr구분선 없애기 */
+hr{
+    display:none;
+}
+/* 마우스 고장났을 때 탭키 눌러서 메인메뉴,본문,주메뉴 바로 갈 수 있도록 -> skip */
+/* Skip */
+.skip a {
+ position: absolute;
+ left: 0;
+ top: -9999em;
+ z-index: 9999;
+ display: block;
+ width: 100%;
+ background-color: #039;
+ color: #eee;
+ font-family: ;
+ text-transform: uppercase;
+ text-decoration: none;
+ line-height: 30px;
+}
+.skip a:hover,
+.skip a:active,
+.skip a:focus {
+ top: 0;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
