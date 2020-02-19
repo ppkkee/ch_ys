@@ -16,7 +16,7 @@ $(document).ready(function () {
         e.preventDefault();
         //선택된 버튼이 몇번째 인지 
         sNum = $(this).index();
-        console.log(sNum);
+//        console.log(sNum);
         moveBanner();
        
     })
@@ -29,7 +29,7 @@ $(document).ready(function () {
             "margin-left": -num *25 + "%"
         }, 3000)
         //선택된 버튼 색상 바꾸기
-        console.log("move:" + num);
+//        console.log("move:" + num);
         if (num == 4) {
 //            sNum = 0;
             //실제 그림이 첫번쨰 그림이 선택된 상태가 되므로 
@@ -42,7 +42,7 @@ $(document).ready(function () {
     //right 버튼을 클릭하면 배너 한개가 왼쪽으로 이동하기
     $(".rightBtn").on("click", function (e) {
         e.preventDefault();
-        console.log(num);
+//        console.log(num);
         if (num ==4) {           
             num = 0;
              $(".banner").css("margin-left", 0)
@@ -77,7 +77,7 @@ $(document).ready(function () {
     $(".banner>li").click(function (e) {
         e.preventDefault();
         var sNum = $(this).index();
-        console.log(sNum);
+//        console.log(sNum);
       
         $(".gBig").css("display","block");
         $(".banner2>li").eq(sNum).css("display", "block").siblings().css("display","none");

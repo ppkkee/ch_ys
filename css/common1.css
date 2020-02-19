@@ -13,6 +13,7 @@ h2,h3{
 *{
     margin:0;
     padding:0;
+    text-shadow: none;
 }
 /* li 장식 제거 */
 li{
