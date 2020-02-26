@@ -3,7 +3,7 @@
 
 body {
  
-     font-family: 'MapoGoldenPier','Jeju Myeongjo', serif;;
+     font-family: 'MapoGoldenPier','Jeju Myeongjo', serif;
     font-size: 25px;
     color: #899f64;
 }
@@ -291,7 +291,7 @@ body {
 
 @media screen and (max-width:375px) {
     .mainT {
-        padding-top: 22vh;
+        padding-top: 18vh;
         font-size: 40px;
 
     }

@@ -30,7 +30,7 @@ $(document).ready(function () {
         }, 3000)
         //선택된 버튼 색상 바꾸기
 //        console.log("move:" + num);
-        if (num == 4) {
+        if (num == 6) {
 //            sNum = 0;
             //실제 그림이 첫번쨰 그림이 선택된 상태가 되므로 
             //버튼만 첫번째가 활성화 되도록 해준다.
@@ -43,7 +43,7 @@ $(document).ready(function () {
     $(".rightBtn").on("click", function (e) {
         e.preventDefault();
 //        console.log(num);
-        if (num ==4) {           
+        if (num ==6) {           
             num = 0;
              $(".banner").css("margin-left", 0)
         }
@@ -54,7 +54,7 @@ $(document).ready(function () {
     $(".leftBtn").on("click", function (e) {
            e.preventDefault();
         if(num==0){
-            num=4;
+            num=6;
             $(".banner").css("margin-left",-num*25+"%")
         }
         num--;
